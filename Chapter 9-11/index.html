@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 09-11</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <!-- Task 6 -->
+    <h1>
+        <script> 
+            document.write("<br> <br> Marks Sheet")
+        </script>
+    </h1>
+    <script>
+        var marks = +prompt("Enter obtained marks");
+        var totalMarks = +prompt("Enter total marks");
+        var per = (marks/totalMarks)*100;
+        var grade, remarks;
+        if (per >= 80){
+            grade = "A+ <br>";
+            remarks = "Excellent <br>";
+        }
+        else if (per >= 70){
+            grade = "A <br>";
+            remarks = "Good <br>";
+        }
+        else if (per >= 60){
+            grade = "B <br>";
+            remarks = "You need to improve <br>";
+        }
+        else if (per < 60){
+            grade = "Fail <br>"
+            remarks = "Sorry <br>";
+        }
+        document.write("Total marks: "+ totalMarks + "<br>");
+        document.write("Marks obtained: "+marks+"<br>");
+        document.write("Percentage: "+ per+ "% <br>");
+        document.write("Grade: "+grade+"<br>");
+        document.write("Remarks: "+remarks+"<br>");
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 06-09</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <!-- Task 6 -->
+    <table>
+        <th>Subject</th>
+        <th>Total Marks</th>
+        <th>Obtained Marks</th>
+        <th>Percentage</th>
+        
+        <script>
+            var sub1 = prompt("Enter subject 1: ");
+            var sub1Marks = +prompt("Enter Marks: ");
+            var sub2 = prompt("Enter subject 2");
+            var sub2Marks = +prompt("Enter Marks: ");
+            var sub3 = prompt("Enter subject 3");
+            var sub3Marks = +prompt("Enter Marks: ");
+            var totalMarks = 100;
+        </script>
+
+        <tr>
+            <td><script>document.write(sub1)</script></td>
+            <td><script>document.write(totalMarks)</script></td>
+            <td><script>document.write(sub1Marks)</script></td>
+            <td><script>document.write(sub1Marks/totalMarks*100 + "%")</script></td>
+        </tr>
+
+        <tr>
+            <td><script>document.write(sub2)</script></td>
+            <td><script>document.write(totalMarks)</script></td>
+            <td><script>document.write(sub2Marks)</script></td>
+            <td><script>document.write(sub2Marks/totalMarks*100 + "%")</script></td>
+        </tr>
+        
+        <tr>
+            <td><script>document.write(sub3)</script></td>
+            <td><script>document.write(totalMarks)</script></td>
+            <td><script>document.write(sub3Marks)</script></td>
+            <td><script>document.write(sub3Marks/totalMarks*100 + "%")</script></td>
+        </tr>
+
+        <tr>
+            <td><script>document.write(" ")</script></td>
+            <td style="text-align: center;"><script>document.write(totalMarks*3)</script></td>
+            <td style="text-align: center;"><script>document.write(sub1Marks+sub2Marks+sub3Marks)</script></td>
+            <td style="text-align: center;"><script>document.write((sub1Marks+sub2Marks+sub3Marks)/(totalMarks*3)*100 + "%")</script></td>
+        </tr>
+        
+
+    </table>
+</body>
+</html>
